@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - College Admission</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      background-color: #004080;
+      color: white;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      padding: 2em 1em;
+      background-color: #e6f2ff;
+      color: #004080;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 2em;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      color: #004080;
+      margin-bottom: 1em;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 0.5em;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5em;
+    }
+
+    .profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 1em;
+    }
+
+    .profile h3 {
+      margin: 0;
+      color: #004080;
+    }
+
+    .profile p {
+      margin: 0;
+      color: #333;
+    }
+
+    .profile a {
+      color: #004080;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .profile a:hover {
+      text-decoration: underline;
+    }
+    button {
+        background-color: #004080;
+        color: white;
+        padding: 0.75em 1.5em;
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top: 1em;
+    }
+
+    button:hover {
+        background-color: #003060;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="form.html">Admission Form</a>
+    <a href="about.html">About Us</a>
+  </nav>
+  <header>
+    <h1>About Us</h1>
+    <p>Meet the team behind your success.</p>
+  </header>
+  <section>
+    <h2>Our Team</h2>
+    <div class="profile">
+      <img src="shreya1.png" alt="Profile 1">
+      <div>
+        <h3>SHREYA GOENKA</h3>
+        <p>Dean of Admissions</p>
+        <button onclick="window.location.href='profile1.html';">Resume</button>
+        <button onclick="window.location.href='bio1.html';">BioData</button>
+      </div>
+    </div>
+    <div class="profile">
+      <img src="suniti.png" alt="Profile 2">
+      <div>
+        <h3>SUNITI HOTTI</h3>
+        <p>Head of Student Services</p>
+        <button onclick="window.location.href='profile2.html';">Resume</button>
+        <button onclick="window.location.href='bio2.html';">BioData</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

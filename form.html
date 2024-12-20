@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      background-color: #004080;
+      color: white;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-top: 1em;
+    }
+
+    form {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 2em;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    form h2 {
+      color: #004080;
+      margin-bottom: 1em;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 0.5em;
+    }
+
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 1em;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 0.5em;
+    }
+
+    button {
+      background-color: #004080;
+      color: white;
+      padding: 0.75em 1.5em;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 1.5em;
+    }
+
+    button:hover {
+      background-color: #003060;
+    }
+
+    .form-group {
+      margin-bottom: 1.5em;
+    }
+
+    .address-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+    }
+
+    .address-group label {
+      margin-top: 0;
+    }
+
+    .form-section {
+      margin-bottom: 2em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="form.html">Admission Form</a>
+    <a href="about.html">About Us</a>
+  </nav>
+  <h1>College Admission Form</h1>
+  <form action="connect.php" method="post">
+    <!-- Personal Information Section -->
+    <div class="form-section">
+      <h2>Personal Information</h2>
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required>
+      
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required>
+      
+      <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+      
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <!-- Permanent Address Section -->
+    <div class="form-section">
+      <h2>Permanent Address</h2>
+      <div class="address-group">
+        <div>
+          <label for="perm-street">Street Address:</label>
+          <input type="text" id="perm-street" name="perm-street" required>
+        </div>
+        <div>
+          <label for="perm-city">City:</label>
+          <input type="text" id="perm-city" name="perm-city" required>
+        </div>
+      </div>
+      <label for="perm-country">Country:</label>
+      <select id="perm-country" name="perm-country" required>
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="USA">U.S.A</option>
+        <option value="Africa">Africa</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Bhutan">Bhutan</option>
+        <option value="Tibet">Tibet</option>
+        <option value="Nigeria">Nigeria</option>
+      </select>
+      
+      <label for="perm-zip">Zip Code:</label>
+      <input type="text" id="perm-zip" name="perm-zip" required>
+    </div>
+
+    <!-- Current Address Section -->
+    <div class="form-section">
+      <h2>Current Address</h2>
+      <div class="address-group">
+        <div>
+          <label for="curr-street">Street Address:</label>
+          <input type="text" id="curr-street" name="curr-street" required>
+        </div>
+        <div>
+          <label for="curr-city">City:</label>
+          <input type="text" id="curr-city" name="curr-city" required>
+        </div>
+      </div>
+      <label for="curr-country">Country:</label>
+      <select id="curr-country" name="curr-country" required>
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="USA">U.S.A</option>
+        <option value="Africa">Africa</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Bhutan">Bhutan</option>
+        <option value="Tibet">Tibet</option>
+        <option value="Nigeria">Nigeria</option>
+      </select>
+      
+      <label for="curr-zip">Zip Code:</label>
+      <input type="text" id="curr-zip" name="curr-zip" required>
+    </div>
+
+    <!-- Emergency Contact Section -->
+    <div class="form-section">
+      <h2>Emergency Contact</h2>
+      <label for="emergency-name">Name:</label>
+      <input type="text" id="emergency-name" name="emergency-name" required>
+      
+      <label for="emergency-phone">Phone Number:</label>
+      <input type="tel" id="emergency-phone" name="emergency-phone" required>
+      
+      <label for="emergency-address">Address:</label>
+      <input type="text" id="emergency-address" name="emergency-address" required>
+      
+      <label for="emergency-email">Email:</label>
+      <input type="email" id="emergency-email" name="emergency-email" required>
+      
+      <label for="emergency-relationship">Relationship:</label>
+      <input type="text" id="emergency-relationship" name="emergency-relationship" required>
+    </div>
+
+    <!-- Education Section -->
+    <div class="form-section">
+      <h2>Education</h2>
+      <label for="high-school-name">High School or Equivalent Name:</label>
+      <input type="text" id="high-school-name" name="high-school-name" required>
+      
+      <label for="graduation-date">Graduation Date:</label>
+      <input type="date" id="graduation-date" name="graduation-date" required>
+      
+      <div class="address-group">
+        <div>
+          <label for="school-city">City:</label>
+          <input type="text" id="school-city" name="school-city" required>
+        </div>
+        <div>
+          <label for="school-state">State:</label>
+          <input type="text" id="school-state" name="school-state" required>
+        </div>
+      </div>
+      <label for="school-country">Country:</label>
+      <select id="school-country" name="school-country" required>
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="USA">U.S.A</option>
+        <option value="Africa">Africa</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Bhutan">Bhutan</option>
+        <option value="Tibet">Tibet</option>
+        <option value="Nigeria">Nigeria</option>
+      </select>
+      
+    </div>
+
+    <!-- Payment Method Section -->
+    <div class="form-section">
+      <h2>Payment Method</h2>
+      <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+      <label for="credit-card">Credit Card</label>
+      <input type="radio" id="mail-check" name="payment-method" value="mail-check">
+      <label for="mail-check">Mail a Check</label>
+      <input type="radio" id="erp" name="payment-method" value="erp">
+      <label for="erp">ERP</label>
+    </div>
+
+    <button type="submit">Submit Form</button>
+  </form>
+</body>
+</html>
